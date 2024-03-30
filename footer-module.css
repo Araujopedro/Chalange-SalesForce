@@ -1,0 +1,20 @@
+footer{
+width: 100%;
+display:flex;
+justify-content: space-around;
+align-items: center;
+
+height: 20vh;
+}
+.footer-IA{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 150px;
+    box-shadow: 0px 16px 18px -6px rgba(0,0,0,0.46);
+}
+.footer-IA h2{
+text-align: center;
+}
