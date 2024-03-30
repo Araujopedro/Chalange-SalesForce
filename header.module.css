@@ -1,0 +1,29 @@
+.headerContainer{
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: #0176d3;
+      padding: 1rem;
+      width: 100%;
+}
+
+.headerContainer > img{
+      width: 100px;
+}
+
+.navContainerList {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      justify-content: space-between;
+
+      color: white;
+      text-transform: uppercase;
+}
+
+.testLink{
+      background-color: #00A1E0;
+      padding: .5rem  1.5rem;
+      border-radius: 1rem;
+}

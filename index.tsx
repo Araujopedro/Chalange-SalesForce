@@ -1,24 +1,24 @@
-import React from 'react'
-import '../footer/footer-module.css'
-import Image from 'next/image';
-import IA from '../../assets/content/IA icon.png'
+import Image from 'next/image'
+import logoImg from '../../assets/icon/logo_desk.svg'
+import classes from './header.module.css'
 
-const Footer = () => {
+const Header = () => {
    return (
-   <footer className= 'Classes.Box1'>
-
-      
-        <div className='footer-IA'>
-         <Image src = {IA} alt = 'Icone IA'/>
-         <h2>IA</h2>
-        </div>
-
-        <div className='footer-IA'>
-         <Image src = {IA} alt = 'Icone IA'/>
-         <h2>venda</h2>
-        </div>
-      </footer>
+      <header className={classes.headerContainer}>
+         <Image src={logoImg} alt="Logo" />
+         <nav>
+            <ul className={classes.navContainerList}>
+               <li><a href="/">Produtos</a></li>
+               <li><a href="#">Industrias</a></li>
+               <li><a href="#">Aprendizado</a></li>
+               <li><a href="/suporte">Acessibilidade e Suporte</a></li>
+               <li><a href="#">Empresas</a></li>
+               <li><a href="/login">Login</a></li>
+               <li><a href="/cadastro" className={classes.testLink}>Teste Grátis</a></li>
+            </ul>
+         </nav>
+      </header>
    );
 };
 
-export default Footer;
+export default Header;
